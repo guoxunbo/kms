@@ -1,8 +1,6 @@
 package com.newbiest.kms.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.newbiest.base.model.NBUpdatable;
-import com.newbiest.base.utils.DateUtils;
 import com.newbiest.base.validate.IDataAuthorityValidation;
 import lombok.Data;
 
@@ -54,7 +52,6 @@ public class Question extends NBUpdatable implements IDataAuthorityValidation {
      */
     @Column(name="START_TIME")
     @Temporal(TemporalType.TIMESTAMP)
-    @JsonFormat(timezone = GMT_PE,pattern = DateUtils.DEFAULT_DATETIME_PATTERN)
     private Date startTime;
 
     /**
@@ -62,7 +59,6 @@ public class Question extends NBUpdatable implements IDataAuthorityValidation {
      */
     @Column(name="END_TIME")
     @Temporal(TemporalType.TIMESTAMP)
-    @JsonFormat(timezone = GMT_PE,pattern = DateUtils.DEFAULT_DATETIME_PATTERN)
     private Date endTime;
 
     @Column(name="STATUS")

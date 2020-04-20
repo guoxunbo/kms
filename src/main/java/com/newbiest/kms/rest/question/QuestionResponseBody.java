@@ -1,7 +1,7 @@
 package com.newbiest.kms.rest.question;
 
 import com.newbiest.kms.model.Question;
-import com.newbiest.msg.ResponseBody;
+import com.newbiest.base.msg.ResponseBody;
 import lombok.Data;
 
 @Data

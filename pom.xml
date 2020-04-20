@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.newbiest</groupId>
     <artifactId>kms</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <properties>
-        <newbiest.framework.version>1.0.4.RELEASE</newbiest.framework.version>
-        <newbiest.idgenerator.version>1.0.1.RELEASE</newbiest.idgenerator.version>
+        <newbiest.framework.version>1.0.5.RELEASE</newbiest.framework.version>
+        <newbiest.idgenerator.version>1.0.2-SNAPSHOT</newbiest.idgenerator.version>
     </properties>
 
     <dependencies>

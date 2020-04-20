@@ -4,7 +4,7 @@ import com.newbiest.base.exception.ClientException;
 import com.newbiest.base.exception.ExceptionManager;
 import com.newbiest.base.exception.NewbiestException;
 import com.newbiest.base.service.BaseService;
-import com.newbiest.base.utils.ThreadLocalContext;
+import com.newbiest.base.threadlocal.ThreadLocalContext;
 import com.newbiest.common.idgenerator.service.GeneratorService;
 import com.newbiest.common.idgenerator.utils.GeneratorContext;
 import com.newbiest.kms.KmsConfiguration;
@@ -116,7 +116,7 @@ public class KmsServiceImpl implements KmsService {
             GeneratorContext generatorContext = new GeneratorContext();
             generatorContext.setRuleName(Question.CREATE_QUESTION_GENERATOR_NAME);
             generatorContext.setObject(question);
-            return generatorService.generatorId(ThreadLocalContext.getOrgRrn(), generatorContext);
+            return generatorService.generatorId(generatorContext);
         } catch (Exception e) {
             throw ExceptionManager.handleException(e, log);
         }

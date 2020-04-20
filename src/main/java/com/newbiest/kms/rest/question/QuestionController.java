@@ -1,10 +1,10 @@
 package com.newbiest.kms.rest.question;
 
 import com.newbiest.base.exception.ClientException;
+import com.newbiest.base.msg.Request;
 import com.newbiest.base.rest.AbstractRestController;
 import com.newbiest.kms.model.Question;
 import com.newbiest.kms.service.KmsService;
-import com.newbiest.msg.Request;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -15,9 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * Created by guoxunbo on 2018/7/12.
- */
 @RestController
 @RequestMapping("/kms")
 @Slf4j
