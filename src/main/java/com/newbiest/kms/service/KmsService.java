@@ -15,5 +15,5 @@ public interface KmsService {
     Question closeQuestion(Question question) throws ClientException;
     Question watchQuestion(Question question) throws ClientException;
 
-    List<QuestionLine> getQuestionLineByQuestionRrn(Long questionRrn) throws ClientException;
+    List<QuestionLine> getQuestionLineByQuestionRrn(String questionRrn) throws ClientException;
 }

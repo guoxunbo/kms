@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface QuestionRepository extends IRepository<Question, Long> {
+public interface QuestionRepository extends IRepository<Question, String> {
 }

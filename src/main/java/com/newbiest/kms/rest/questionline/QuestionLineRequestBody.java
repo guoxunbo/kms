@@ -16,7 +16,7 @@ public class QuestionLineRequestBody extends RequestBody {
 	private String actionType;
 
 	@ApiModelProperty(value="问题主键")
-	private Long questionRrn;
+	private String questionRrn;
 
 	@ApiModelProperty(value = "操作的问题详情对象")
 	private QuestionLine questionLine;

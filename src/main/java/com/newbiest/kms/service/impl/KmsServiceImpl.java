@@ -122,7 +122,7 @@ public class KmsServiceImpl implements KmsService {
         }
     }
 
-    public List<QuestionLine> getQuestionLineByQuestionRrn(Long questionRrn) throws ClientException{
+    public List<QuestionLine> getQuestionLineByQuestionRrn(String questionRrn) throws ClientException{
         return questionLineRepository.findByQuestionRrn(questionRrn);
     }
 

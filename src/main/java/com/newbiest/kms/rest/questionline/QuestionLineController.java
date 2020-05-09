@@ -39,11 +39,8 @@ public class QuestionLineController extends AbstractRestController {
 
         QuestionLineRequestBody requestBody = request.getBody();
         String actionType = requestBody.getActionType();
-        QuestionLine questionLine = requestBody.getQuestionLine();
-
         if (QuestionLineRequest.ACTION_GET_BY_QUESTION_RRN.equals(actionType)) {
-            Long questionRrn = requestBody.getQuestionRrn();
-            List<QuestionLine> questionLineList = kmsService.getQuestionLineByQuestionRrn(questionRrn);
+            List<QuestionLine> questionLineList = kmsService.getQuestionLineByQuestionRrn(requestBody.getQuestionRrn());
             responseBody.setQuestionLines(questionLineList);
         } else {
             throw new ClientException(Request.NON_SUPPORT_ACTION_TYPE + requestBody.getActionType());

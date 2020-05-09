@@ -18,7 +18,7 @@ import javax.persistence.Table;
 public class QuestionLine extends NBUpdatable implements IDataAuthorityValidation {
 
     @Column(name="QUESTION_RRN")
-    private Long questionRrn;
+    private String questionRrn;
 
     /**
      * 怀疑内容

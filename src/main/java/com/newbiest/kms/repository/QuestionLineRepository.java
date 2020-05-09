@@ -8,8 +8,8 @@ import java.util.List;
 
 
 @Repository
-public interface QuestionLineRepository extends IRepository<QuestionLine, Long> {
+public interface QuestionLineRepository extends IRepository<QuestionLine, String> {
 
-    List<QuestionLine> findByQuestionRrn(Long questionRrn);
+    List<QuestionLine> findByQuestionRrn(String questionRrn);
 
 }
